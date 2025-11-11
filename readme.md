@@ -17,7 +17,7 @@ DATAx is a command-line application that provides user registration, authenticat
 
 ## 📁 Project Structure
 
-DATAx_Project/ \n
+DATAx_Project/ \
    ├── data/
       ├── database.db # SQLite database file 
       └── database.py # Database configuration and setup 
