@@ -59,3 +59,4 @@ def register_user():
         conn.rollback()
     finally:
         conn.close()
+

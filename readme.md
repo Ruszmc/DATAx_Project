@@ -99,3 +99,4 @@ The application uses SQLite with the following main tables:
 ## 👤 Author
 
 Fynn C.
+
