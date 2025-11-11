@@ -1,4 +1,3 @@
-``` markdown
 # DATAx Project
 
 A Python-based user authentication and task management system with SQLite database integration.
@@ -17,9 +16,8 @@ DATAx is a command-line application that provides user registration, authenticat
 - **Secure Password Input**: Hidden password entry using `getpass`
 
 ## 📁 Project Structure
-```
 
-DATAx_Project/ 
+DATAx_Project/ \n
    ├── data/
       ├── database.db # SQLite database file 
       └── database.py # Database configuration and setup 
