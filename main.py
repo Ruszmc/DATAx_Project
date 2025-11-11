@@ -1,7 +1,14 @@
+from data.database import init_login_db, init_user_db, init_data_db
 from login_manage.login import login_user
 from login_manage.register import register_user
 
 def main_menu():
+    init_user_db()
+    init_data_db()
+    init_login_db()
+    print("\n")
+
+
     while True:
         print("Welcome to the task manager!")
         print("What would you like to do?")

@@ -41,8 +41,8 @@ def register_user():
 
     username = input("Enter the username: ")
     password = input("Enter the password: ")
-##    password = getpass.getpass("Enter the password: ")
-##      replace later, so i dont have an error rn
+    ##password = getpass.getpass("Enter the password: ")
+      ##replace later, so I don´t have an error rn
 
     try:
         cursor.execute('''

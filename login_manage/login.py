@@ -1,4 +1,7 @@
-from data.database import init_user_db, init_data_db, init_login_db
+import getpass
+import sqlite3
+
+from data.database import DATABASE_PATH
 from tasks.user_management import add_user, del_user
 from tasks.task_management import add_task, show_tasks_from_user
 
@@ -10,10 +13,6 @@ def login_user():
 
     if user == "Fynn":
         if password == "test":
-            init_user_db()
-            init_data_db()
-            init_login_db()
-
             print("Welcome to the randomass database!")
 
             while True:
@@ -45,3 +44,26 @@ def login_user():
     else:
         print("Wrong username or password!")
         return login_user()
+
+
+def real_login():
+    user = input("Username: ")
+    password = input("Password: ")
+    ##password = getpass.getpass("Enter the password: ")
+
+    conn = sqlite3.connect(DATABASE_PATH)
+    cursor = conn.cursor()
+
+    cursor.execute('''
+        SELECT user_name, password
+        FROM login_manage
+        WHERE user_name = ? AND password = ?
+    ''', (user, password))
+
+    user_exist = cursor.fetchall()
+
+    if not user_exist:
+        print(f"This User doesn't exist or hasn't been registered yet!")
+        conn.close()
+        return
+
