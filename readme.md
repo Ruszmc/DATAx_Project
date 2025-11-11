@@ -18,16 +18,16 @@ DATAx is a command-line application that provides user registration, authenticat
 ## 📁 Project Structure
 
 DATAx_Project/ \
-   ├── data/
-      ├── database.db # SQLite database file 
-      └── database.py # Database configuration and setup 
-   ├── login_manage/ 
-      ├── login.py # User login functionality
-      └── register.py # User registration functionality 
-   ├── tasks/ 
-      ├── task_management.py # Task CRUD operations
-      └── user_management.py # User account management 
-   ├── main.py # Application entry point 
+   ├── data/ \
+      ├── database.db # SQLite database file  \
+      └── database.py # Database configuration and setup  \
+   ├── login_manage/  \
+      ├── login.py # User login functionality \
+      └── register.py # User registration functionality  \
+   ├── tasks/  \
+      ├── task_management.py # Task CRUD operations \
+      └── user_management.py # User account management  \
+   ├── main.py # Application entry point  \
    └── .venv/ # Virtual environment (not in repo)``` 
 
 ## 🛠️ Technologies
