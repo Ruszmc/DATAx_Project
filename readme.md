@@ -65,7 +65,8 @@ source .venv/bin/activate # macOS/Linux
 or
 .venv\Scripts\activate # Windows
 Run the main application
-python main.py``` 
+python main.py```
+   ```
 
 ### Important: Terminal Requirement
 
