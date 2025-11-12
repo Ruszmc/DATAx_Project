@@ -48,8 +48,8 @@ def init_login_db():
         Create Table IF NOT EXISTS login_manage (
             user_name TEXT,
             password TEXT,
-            registered_user_id TEXT
-            role TEXT, DEFAULT 'user'
+            registered_user_id TEXT,
+            role TEXT DEFAULT 'user'
         )
     ''')
 
