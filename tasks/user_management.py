@@ -190,3 +190,5 @@ def del_user():
     else:
         print("Invalid choice!")
 
+def add_role():
+    print("You can add a role to a user by: ")
