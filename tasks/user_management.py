@@ -3,6 +3,23 @@ from datetime import date
 
 from data.database import DATABASE_PATH
 
+
+def user_management_menu():
+    while True:
+        print("\nUser Management Menu:")
+        print("1. Add a user")
+        print("2. Delete a user")
+        print("3. Back")
+        choice = input("Input number: ")
+        if choice == "1":
+            add_user()
+        elif choice == "2":
+            del_user()
+        elif choice == "3":
+            break
+        else:
+            print("Invalid choice!")
+
 def add_user():
 
     first_name_ip = input("What is your first name? ").split()

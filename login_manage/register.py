@@ -1,8 +1,10 @@
-import getpass
+import hashlib
 import sqlite3
 
 from data.database import DATABASE_PATH
 
+def hash_password(password):
+    return hashlib.sha256(password.encode()).hexdigest()
 
 def register_user():
     user_id = input("Enter the user ID: ")
@@ -44,12 +46,14 @@ def register_user():
     ##password = getpass.getpass("Enter the password: ")
       ##replace later, so I don´t have an error rn
 
+    hashed_password = hash_password(password)
+
     try:
         cursor.execute('''
             UPDATE login_manage
             SET user_name = ?, password = ?
             WHERE registered_user_id = ?
-        ''', (username, password, user_id))
+        ''', (username, hashed_password, user_id))
 
         conn.commit()
         print(f"User {username} registered successfully through {user_id}!")
