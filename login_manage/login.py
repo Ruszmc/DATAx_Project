@@ -61,10 +61,10 @@ def real_login():
     ''', (user, password))
 
     user_exist = cursor.fetchall()
+    conn.close()
 
-    if not user_exist:
-        print(f"This User doesn't exist or hasn't been registered yet!")
-        conn.close()
-        return
-
-
+    if user_exist:
+        print(f"Welcome {user}!")
+        return True
+    else:
+        print("Wrong username or password!")

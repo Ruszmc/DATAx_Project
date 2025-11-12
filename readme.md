@@ -1,4 +1,3 @@
-``` markdown
 # DATAx Project
 
 A Python-based user authentication and task management system with SQLite database integration.
@@ -15,11 +14,6 @@ DATAx is a command-line application that provides user registration, authenticat
 - **User Management**: Manage user accounts and permissions
 - **SQLite Database**: Persistent data storage with relational database
 - **Secure Password Input**: Hidden password entry using `getpass`
-
-## 📁 Project Structure
-```
-
-DATAx_Project/ ├── data/ │ ├── database.db # SQLite database file │ └── database.py # Database configuration and setup ├── login_manage/ │ ├── login.py # User login functionality │ └── register.py # User registration functionality ├── tasks/ │ ├── task_management.py # Task CRUD operations │ └── user_management.py # User account management ├── main.py # Application entry point └── .venv/ # Virtual environment (not in repo)``` 
 
 ## 🛠️ Technologies
 
@@ -65,7 +59,8 @@ source .venv/bin/activate # macOS/Linux
 or
 .venv\Scripts\activate # Windows
 Run the main application
-python main.py``` 
+python main.py```
+   ```
 
 ### Important: Terminal Requirement
 

@@ -49,6 +49,7 @@ def init_login_db():
             user_name TEXT,
             password TEXT,
             registered_user_id TEXT
+            role TEXT, DEFAULT 'user'
         )
     ''')
 

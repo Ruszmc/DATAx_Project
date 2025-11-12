@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0cad462f-b3e4-4bbc-be17-1decb2c838d1" name="Changes" comment="70% Done Project">
-      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+    <list default="true" id="0cad462f-b3e4-4bbc-be17-1decb2c838d1" name="Changes" comment="small changes and readme.md">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/data/database.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login_manage/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/login_manage/login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login_manage/register.py" beforeDir="false" afterPath="$PROJECT_DIR$/login_manage/register.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +133,7 @@
       <updated>1762724941214</updated>
       <workItem from="1762724942236" duration="4108000" />
       <workItem from="1762765673876" duration="27158000" />
-      <workItem from="1762864423754" duration="3650000" />
+      <workItem from="1762864423754" duration="10218000" />
     </task>
     <task id="LOCAL-00001" summary="70% Done Project">
       <option name="closed" value="true" />
@@ -143,7 +143,31 @@
       <option name="project" value="LOCAL" />
       <updated>1762865154043</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="some small changes">
+      <option name="closed" value="true" />
+      <created>1762870187908</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1762870187908</updated>
+    </task>
+    <task id="LOCAL-00003" summary="new file">
+      <option name="closed" value="true" />
+      <created>1762870195031</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1762870195031</updated>
+    </task>
+    <task id="LOCAL-00004" summary="small changes and readme.md">
+      <option name="closed" value="true" />
+      <created>1762870281048</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1762870281048</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -151,10 +175,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="70% Done Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="70% Done Project" />
+    <MESSAGE value="some small changes" />
+    <MESSAGE value="new file" />
+    <MESSAGE value="small changes and readme.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="small changes and readme.md" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DATAx_Project$database.coverage" NAME="database Coverage Results" MODIFIED="1762725569014" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/DATAx_Project$main.coverage" NAME="main Coverage Results" MODIFIED="1762865438351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DATAx_Project$main.coverage" NAME="main Coverage Results" MODIFIED="1762935758489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
