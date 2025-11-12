@@ -191,4 +191,87 @@ def del_user():
         print("Invalid choice!")
 
 def add_role():
-    print("You can add a role to a user by: ")
+    print("A User can have a certain role: ")
+    print("1. Admin")
+    print("2. User")
+
+    print("Do you want to add a role through:")
+    print("1. Name")
+    print("2. Unique ID")
+    choice = input("Input number: ")
+
+
+    if choice == "1":
+        first_name = input("Enter the first name: ")
+        last_name = input("Enter the last name: ")
+        role = input("Enter the role: ")
+        if role == '1':
+            role = 'admin'
+            add_role_set_by_name(first_name, last_name, role)
+        elif role == '2':
+            role = 'user'
+            add_role_set_by_name(first_name, last_name, role)
+
+    if choice == "2":
+        user_id = input("Enter the unique ID: ")
+        role = input("Enter the role: ")
+
+        if role == '1':
+            role = 'admin'
+            add_role_set_by_id(user_id, role)
+        elif role == '2':
+            role = 'user'
+            add_role_set_by_id(user_id, role)
+        else :
+            print("Invalid Role choice!")
+
+
+def add_role_set_by_name(first_name, last_name, role):
+    conn = sqlite3.connect(DATABASE_PATH)
+    cursor = conn.cursor()
+    cursor.execute('''
+                   SELECT registered_user_id
+                   FROM users
+                   WHERE LOWER(first_name) = ?
+                     AND LOWER(last_name) = ?
+                   ''', (first_name.lower(), last_name.lower()))
+
+    user = cursor.fetchone()
+    if not user:
+        print(f"User {first_name} {last_name} not found!")
+        conn.close()
+        return
+
+    user_id = user[0]
+
+    try:
+        cursor.execute('''
+                       UPDATE login_manage
+                       SET role = ?
+                       WHERE registered_user_id = ?
+                       ''', (role, user_id))
+
+        conn.commit()
+    except sqlite3.Error as e:
+        print(f"Error: {e}")
+        conn.rollback()
+    finally:
+        conn.close()
+
+def add_role_set_by_id(user_id, role):
+    conn = sqlite3.connect(DATABASE_PATH)
+    cursor = conn.cursor()
+
+    try:
+        cursor.execute('''
+                       UPDATE login_manage
+                       SET role = ?
+                       WHERE registered_user_id = ?
+                       ''', (role, user_id))
+
+        conn.commit()
+    except sqlite3.Error as e:
+        print(f"Error: {e}")
+        conn.rollback()
+    finally:
+        conn.close()

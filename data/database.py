@@ -56,3 +56,20 @@ def init_login_db():
     conn.commit()
     conn.close()
     print('Database for login_manage initialized')
+
+def init_request_db():
+
+    conn = sqlite3.connect(DATABASE_PATH)
+    cursor = conn.cursor()
+
+    cursor.execute('''
+        Create Table IF NOT EXISTS request_manage (
+            first_name TEXT,
+            last_name TEXT,
+            birthday TEXT,
+            registered_user_id TEXT,
+            project_name TEXT,
+            description TEXT,
+            due_date TEXT
+        )
+    ''')

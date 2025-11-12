@@ -1,5 +1,5 @@
 from data.database import init_login_db, init_user_db, init_data_db
-from login_manage.login import login_user, real_login
+from login_manage.login import login_menu, real_login
 from login_manage.register import register_user
 
 def main_menu():
@@ -24,7 +24,7 @@ def main_menu():
             print("Goodbye!")
             exit()
         elif choice == "4":
-            login_user()
+            login_menu()
         else:
             print("Invalid choice!")
 

@@ -146,3 +146,6 @@ def show_tasks_from_user():
     finally:
         if 'conn' in locals():
             conn.close()
+
+def user_request_task():
+    print("Hello World!")
